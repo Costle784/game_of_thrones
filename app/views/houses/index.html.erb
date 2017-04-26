@@ -1,0 +1,12 @@
+<h1>Houses</h1>
+<h2>Add House<%= link_to "(+)", new_house_path %></h2>
+
+<% @houses.each do |house| %>
+  <p>
+    <%= link_to house.name, house, class:'housename' %>
+  </p>
+  <p>
+    <%= image_tag house.img_url %>
+  </p>
+  <hr>
+<% end %>

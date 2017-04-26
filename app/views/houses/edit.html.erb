@@ -1,0 +1,17 @@
+<%= form_for @house do |f| %>
+  <p>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+  </p>
+  <p>
+    <%= f.label :img_url %>
+    <%= f.text_field :img_url %>
+  </p>
+  <p>
+    <%= f.label :motto %>
+    <%= f.text_field :motto %>
+  </p>
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

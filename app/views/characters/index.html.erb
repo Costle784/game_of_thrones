@@ -1,0 +1,10 @@
+<h1>Characters</h1>
+
+<% @character.each do |character| %>
+  <p>
+  <%= link_to character.name, house_character_path(character.house_id, character)%>
+</p>
+<p>
+  <%= image_tag character.img_url %>
+</p>
+<% end %>
